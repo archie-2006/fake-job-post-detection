@@ -63,8 +63,8 @@ def preprocess_pipeline(X_train, X_test):
     )
     X_train_tfidf = vectorizer.fit_transform(X_train_text)
     X_test_tfidf = vectorizer.transform(X_test_text)
-    print(f"  └── Done in {time.time() - t0:.2f}s")
-    print(f"  └── Extracted {X_train_tfidf.shape[1]} n-gram features.")
+    print(f"  === Done in {time.time() - t0:.2f}s")
+    print(f"  === Extracted {X_train_tfidf.shape[1]} n-gram features.")
 
     # 3. Categorical Encoding
     print("\n[ 3 / 4 ] Encoding categorical features...")
